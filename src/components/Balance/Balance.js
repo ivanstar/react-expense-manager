@@ -12,12 +12,6 @@ const Balance = () => {
  
     const total = amount.reduce( (acc, curr) => acc += curr, 0 ).toFixed(2)
     
-    // let total = 0;
-    // for(let i = 0; i < amount.length;i++){
-    //     total += amount[i];
-    // }
-
-
     console.log(total)
     return (
         <>
