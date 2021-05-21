@@ -4,3 +4,14 @@ A web app that helps keeps track of expenses and assist in helping manage your m
 
 ## Live
 View this project live [HERE](https://react-money-expense-tracker.netlify.app/)
+
+## Features
+
+
+
+
+
+
+## Technology Used
+
+* React
