@@ -7,8 +7,7 @@ View this project live [HERE](https://react-money-expense-tracker.netlify.app/)
 
 ## Overview
 
-Users can label their type of expenses and incomes. 
-
+Users can insert and label their type of money expenses and incomes. It will keep continue of how much they spent, how much they have made, and how much money remaining. 
 
 
 
