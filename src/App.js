@@ -1,23 +1,28 @@
-import './App.css';
-import Header from './components/Header/Header'
-import Balance from './components/Balance/Balance'
-import IncomeExpenses from './components/Expenses/IncomeExpenses'
-import TranscationList from './components/TranscationList/TransactionList'
-import AddTranscation from './components/AddTranscation/AddTranscation'
+import {Grid} from '@material-ui/core';
+import Details from './components/Details/Details'
+import Main from './components/Main/Main'
+import { Provider } from './context/context'
 
-import {GlobalProvider} from './context/GlobalState'
-
+import useStyles from './styles'
 function App() {
+  const classes = useStyles();
   return (
-    <GlobalProvider>
-      <Header />
-        <div className="container">
-          <Balance />
-          <IncomeExpenses />
-          <TranscationList />
-          <AddTranscation />
-        </div>     
-    </GlobalProvider>
+    <div>
+      <Provider>
+        <Grid className={classes.grid} container space={0} justify="center" alignItems="center" style={{height:'100vh'}}>
+            <Grid item xs={12} sm={4}>
+                <Details title="Income"/>
+            </Grid>
+            <Grid item xs={12} sm={3}>
+                <Main />
+            </Grid>
+            <Grid item xs={12} sm={4}>
+                <Details title="Expense"/>
+            </Grid>
+        </Grid>
+      </Provider>
+     
+    </div>
   );
 }
 
